@@ -41,5 +41,5 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          image: thotagopinath31/trianz_sample:tag
+          image: thotagopinath31/trianz_sample_New:tag
           run: echo "hello docker world !!!!!"
