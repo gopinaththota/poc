@@ -36,10 +36,9 @@ jobs:
           echo test, and deploy your project.
           
       - name: Run Docker Image
-        uses: actions/checkout@v2 # Required to mount the Github Workspace to a volume 
       - uses: addnab/docker-run-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          image: thotagopinath31/trianz_sample_New:tag
+          image: thotagopinath31/trianz_sample:tag
           run: echo "hello docker world !!!!!"
