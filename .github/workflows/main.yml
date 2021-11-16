@@ -37,7 +37,7 @@ jobs:
           
       - name: Run Docker Image
         uses: actions/checkout@v2 # Required to mount the Github Workspace to a volume 
-      - uses: addnab/docker-run-action@v3
+      - uses: docker://thotagopinath31/spring-test:latest
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
